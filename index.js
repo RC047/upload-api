@@ -23,7 +23,7 @@ app.use(formidable({
 	multiples: true,
 	keepExtensions: true,
 	allowEmptyFiles: false,
-	uploadDir: path.resolve('public', 'files'),
+	uploadDir: path.resolve('tmp'),
 	maxFileSize: 1024 * 1024 * 50 // set limit size to 50 MB
 }))	
 
