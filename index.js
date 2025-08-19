@@ -29,7 +29,7 @@ app.use(formidable({
 
 app.all('/', async (req, res, next) => {
     if (req.method !== 'POST') return res.status(405).json({ status: res.statusCode, message: 'Method not allowed' })
-    let files = req.files ? req.files.data.path : req.fields
+    let files = req.files.data ? req.files.data.path : req.fields
 	console.log('Files:', files)
     if (!files) return res.status(400).json({ status: res.statusCode, message: 'No files passed' })
 	try {
