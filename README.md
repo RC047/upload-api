@@ -1,2 +1,2 @@
-# ssweb-api
-Screenshot Web API
+# upload-api
+Simple Upload File API
